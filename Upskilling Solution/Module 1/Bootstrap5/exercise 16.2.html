@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 16.2 - Absolute Floating Badge</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light py-5">
+
+    <div class="container d-flex justify-content-center py-5">
+        
+        <div class="card border p-3 position-relative shadow-sm bg-white" style="width: 320px;">
+            
+            <div class="bg-dark text-white rounded d-flex align-items-center justify-content-center" style="height: 180px; font-size: 3.5rem;">
+                💾
+            </div>
+            
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger shadow border border-white p-2">
+                Live Alert
+            </span>
+
+            <div class="card-body px-1 pt-3 pb-0">
+                <h5 class="fw-bold">Kafka Stream Hub</h5>
+                <p class="small text-muted mb-0">Coordinate anchoring implemented cleanly over standard display margins via positioning layers.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

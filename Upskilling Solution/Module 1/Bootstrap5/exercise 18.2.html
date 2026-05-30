@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 18.2 - Responsive Accordion</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light py-5">
+
+    <div class="container" style="max-width: 650px;">
+        <h3 class="mb-4 text-center fw-bold">FAQ Structural Panels</h3>
+        
+        <div class="accordion shadow-sm" id="knowledgeBaseAccordion">
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is the pipeline execution target latency value?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#knowledgeBaseAccordion">
+                    <div class="accordion-body">
+                        Kafka broker integration models aim for an operational network delay processing limit under 15ms inside local cluster setups.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How are task deadline state alterations tracked?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#knowledgeBaseAccordion">
+                    <div class="accordion-body">
+                        The backend framework reads standard date timestamp variables to alter persistence entries dynamically upon submission queries.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4.1 - Sidebar & Content Layout</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        /* Decorative styles to highlight the column regions */
+        .sidebar-box {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            min-height: 300px;
+        }
+        .content-box {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            min-height: 300px;
+        }
+    </style>
+</head>
+<body class="bg-light py-4">
+
+    <div class="container">
+        <h2 class="mb-4">Dashboard Layout</h2>
+        
+        <div class="row g-4">
+            
+            <aside class="col-md-3">
+                <div class="sidebar-box p-3 rounded shadow-sm">
+                    <h5 class="text-secondary border-bottom pb-2">Navigation</h5>
+                    <ul class="nav flex-column row-gap-2">
+                        <li class="nav-item"><a class="nav-link active p-0" href="#">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link p-0" href="#">Analytics</a></li>
+                        <li class="nav-item"><a class="nav-link p-0" href="#">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link p-0" href="#">Settings</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="col-md-9">
+                <div class="content-box p-4 rounded shadow-sm">
+                    <h3 class="text-primary">Main Workspace</h3>
+                    <p class="text-muted">
+                        This workspace area spans across 9 grid columns on tablet and desktop monitors. 
+                        When viewed on small mobile displays, this block stacks naturally right beneath the sidebar navigation system.
+                    </p>
+                    <hr>
+                    <div class="p-3 bg-light text-center border rounded">
+                        Dynamic Application Content Component
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

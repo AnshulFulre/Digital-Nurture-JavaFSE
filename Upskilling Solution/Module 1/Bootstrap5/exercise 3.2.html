@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3.2 - Grid Structure Layout</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        /* Helper styles to make structural elements clear */
+        .demo-sidebar {
+            background-color: #6c757d;
+            color: white;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .demo-main {
+            background-color: #198754;
+            color: white;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .demo-footer-col {
+            background-color: #ffc107;
+            color: #000;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-light py-5">
+
+    <div class="container">
+        <h2 class="mb-4 text-center">Exercise 3.2: Structural Components</h2>
+
+        <div class="row g-3 mb-4">
+            
+            <div class="col-md-4">
+                <div class="demo-sidebar rounded p-3 shadow-sm">
+                    <h4>.col-md-4</h4>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="demo-main rounded p-3 shadow-sm">
+                    <h4>.col-md-8</h4>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row g-3">
+            <div class="col">
+                <div class="demo-footer-col rounded border">
+                    <h5>.col (Auto-equal)</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="demo-footer-col rounded border">
+                    <h5>.col (Auto-equal)</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="demo-footer-col rounded border">
+                    <h5>.col (Auto-equal)</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

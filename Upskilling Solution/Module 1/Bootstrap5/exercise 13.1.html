@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 13.1 - Contextual Dashboard</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light py-5">
+
+    <div class="container">
+        <h2 class="mb-4 text-center fw-bold">System Status Dashboard</h2>
+        <div class="row g-4 text-center">
+            
+            <div class="col-md-4">
+                <div class="p-4 bg-primary text-white rounded shadow-sm">
+                    <h5>Main Node Pool</h5>
+                    <p class="display-6 my-2">99.9%</p>
+                    <span class="small text-white-50">Operational Capacity</span>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-4 bg-warning text-dark rounded shadow-sm">
+                    <h5>Memory Buffer</h5>
+                    <p class="display-6 my-2">84.2%</p>
+                    <span class="small text-dark-50">Approaching Limit</span>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-4 bg-danger text-white rounded shadow-sm">
+                    <h5>Dropped Packets</h5>
+                    <p class="display-6 my-2">0.04%</p>
+                    <span class="small text-white-50">Critical Router</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

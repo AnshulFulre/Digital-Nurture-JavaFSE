@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3.1 - Responsive Breakpoints</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        /* Custom coloring just to make the columns visually distinct */
+        .grid-box {
+            background-color: #0d6efd;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-light py-5">
+
+    <div class="container">
+        <h2 class="mb-4 text-center">Exercise 3.1: Breakpoint Grid</h2>
+        <p class="text-muted text-center mb-5">Resize your browser window to watch the arrangement shift automatically.</p>
+
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="grid-box shadow-sm">
+                    Column 1
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="grid-box shadow-sm">
+                    Column 2
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="grid-box shadow-sm">
+                    Column 3
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

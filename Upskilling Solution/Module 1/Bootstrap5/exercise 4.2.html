@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4.2 - Four Column Grid</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .feature-card {
+            background-color: #ffffff;
+            border-top: 4px solid #198754; /* Green accent strip */
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-light py-5">
+
+    <div class="container">
+        <h2 class="text-center mb-2">Our Features</h2>
+        <p class="text-center text-muted mb-5">Four equal columns starting at the small screen breakpoint</p>
+
+        <div class="row g-3">
+            
+            <div class="col-sm-3">
+                <div class="feature-card p-4 rounded shadow-sm">
+                    <div class="fs-1 mb-2">⚙️</div>
+                    <h5>Fast Setup</h5>
+                    <p class="small text-muted mb-0">Pre-compiled modules ready for deployment.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="feature-card p-4 rounded shadow-sm">
+                    <div class="fs-1 mb-2">📱</div>
+                    <h5>Responsive</h5>
+                    <p class="small text-muted mb-0">Fluid adjustments across multiple viewport dimensions.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="feature-card p-4 rounded shadow-sm">
+                    <div class="fs-1 mb-2">🔒</div>
+                    <h5>Secure</h5>
+                    <p class="small text-muted mb-0">Encrypted transmission models by design.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="feature-card p-4 rounded shadow-sm">
+                    <div class="fs-1 mb-2">📊</div>
+                    <h5>Analytics</h5>
+                    <p class="small text-muted mb-0">Deep telemetry insight records aggregated on demand.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5.2 - Column Reordering</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .box-primary {
+            background-color: #0d6efd;
+            color: white;
+            min-height: 150px;
+        }
+        .box-warning {
+            background-color: #ffc107;
+            color: #212529;
+            min-height: 150px;
+        }
+    </style>
+</head>
+<body class="bg-light py-5">
+
+    <div class="container">
+        <h2 class="text-center mb-2">Exercise 5.2: Visual Reordering</h2>
+        <p class="text-center text-muted mb-5">
+            <strong>Mobile rule:</strong> Rednered sequentially (A then B).<br>
+            <strong>Desktop rule (&ge;768px):</strong> Swapped visually using order classes (B then A).
+        </p>
+
+        <div class="row g-4">
+            
+            <div class="col-md-8 order-md-2">
+                <div class="box-primary p-4 rounded shadow-sm d-flex flex-column justify-content-center">
+                    <h3>[Block A] Main Content Workspace</h3>
+                    <p class="mb-0 opacity-75">I am written FIRST in the HTML source code document.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 order-md-1">
+                <div class="box-warning p-4 rounded shadow-sm d-flex flex-column justify-content-center">
+                    <h3>[Block B] Sidebar Nav</h3>
+                    <p class="mb-0 opacity-75">I am written SECOND in the HTML source code document.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

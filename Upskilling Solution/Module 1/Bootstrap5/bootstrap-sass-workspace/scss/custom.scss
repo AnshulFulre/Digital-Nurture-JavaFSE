@@ -1,0 +1,16 @@
+/* ==========================================================================
+   scss/custom.scss
+   ========================================================================== */
+
+// 1. Variable Overrides (Declared BEFORE importing Bootstrap source)
+$primary: #4b0082;          // Overrides primary accent with Deep Indigo
+$success: #00ff7f;          // Overrides success indicators with Spring Green
+$border-radius-lg: 2rem;    // Overrides standard rounded-3 class with an ultra-round edge
+
+// 2. Import the original structural engine files from node_modules
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// 3. Optional Custom CSS definitions can follow down here
+body {
+    background-color: #f8f9fa;
+}

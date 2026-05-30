@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5.1 - Flexbox Centering</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        /* Giving the row a fixed height so vertical centering is obvious */
+        .custom-row-height {
+            min-height: 400px;
+            background-color: #e9ecef;
+            border: 2px dashed #dee2e6;
+        }
+        .center-card {
+            background-color: #6f42c1;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-light py-5">
+
+    <div class="container">
+        <h2 class="text-center mb-3">Exercise 5.1: Grid Alignment</h2>
+        <p class="text-center text-muted mb-4">The box below is perfectly centered both horizontally and vertically inside its parent container row.</p>
+
+        <div class="row justify-content-center align-items-center custom-row-height g-0 rounded">
+            
+            <div class="col-md-6 col-10">
+                <div class="center-card shadow">
+                    <h4 class="mb-2">Dead Centered Card</h4>
+                    <p class="mb-0 small opacity-75">
+                        Powered entirely by <code>.justify-content-center</code> and <code>.align-items-center</code> structural utility modifiers.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

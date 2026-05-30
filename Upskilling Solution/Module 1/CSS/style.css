@@ -1,0 +1,229 @@
+/*1. CSS RESET & GLOBAL CONFIGURATION*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif; 
+    line-height: 1.7;
+    background-color: #f4f6f9; 
+    background-image: radial-gradient(#e0e0e0 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #333333;
+    padding-bottom: 40px;
+}
+
+/*2. TYPOGRAPHY & HEADINGS*/
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a252f;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+h3, p.description {
+    color: #555555;
+    margin-bottom: 12px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/*3. NAVIGATION & LINKS*/
+header {
+    background-color: #2c3e50; 
+    padding: 15px 5vw; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none; 
+    list-style-position: inside;
+    display: flex;
+    gap: 25px;
+}
+
+nav a:link, nav a:visited {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: #3498db; 
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: #1abc9c; 
+}
+
+/*4. SECTIONS & CARDS*/
+#mainHeader {
+    background-color: rgba(52, 152, 219, 0.15); 
+    border-left: 6px solid #3498db; 
+    padding: 25px;
+    margin: 30px 5vw;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 5vw;
+}
+
+section {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+section h2 {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f0f4f8;
+}
+
+/* 5. INTERACTIVE FORMS & STATES */
+.forms-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 25px;
+}
+
+.form-block {
+    flex: 1;
+    min-width: 320px;
+}
+
+.interactive-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.interactive-form input,
+.interactive-form select,
+.interactive-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.interactive-form input:focus,
+.interactive-form select:focus,
+.interactive-form textarea:focus {
+    border-color: #3498db;
+    outline: 3px solid rgba(52, 152, 219, 0.25); 
+    outline-offset: 1px;
+}
+
+.submit-btn {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+.clear-btn {
+    background-color: #e2e8f0;
+    color: #475569;
+    margin-top: 8px;
+}
+
+.clear-btn:hover {
+    background-color: #cbd5e1;
+}
+
+.hidden {
+    display: none; 
+}
+
+.form-output, .geo-box {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.success-box { background-color: #ecfdf5; border: 1px solid #a7f3d0; color: #065f46; }
+.geo-box { background-color: #f0fdf4; border: 1px solid #bbf7d0; color: #166534; }
+.geo-error { background-color: #fef2f2; border: 1px solid #fecaca; color: #991b1b; }
+.error-message { color: #e74c3c; font-size: 0.85rem; margin-top: 5px; display: none; }
+
+/* 6. FOOTER COMPONENT */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #2c3e50;
+    color: #ffffff;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* 7. RESPONSIVE DESIGN & MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+    
+    header {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    #mainHeader {
+        margin: 15px;
+        padding: 15px;
+    }
+}

@@ -1,0 +1,3 @@
+css folder contains stylesheets that dictate the visual apperance of project.
+Js folder contains javascript files that make bootstrap components dynamic and live.
+Icon folder contains variety of custom designed and open-source SVG icons.
