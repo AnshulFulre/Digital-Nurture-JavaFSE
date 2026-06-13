@@ -1,0 +1,3 @@
+Recursion is a programming technique in which a bigger problem is solved by breaking down it into smaller subproblems.
+Every recursive problem has base case which stops the recursive call and recursive case in which function calls itself
+using smaller or same input.

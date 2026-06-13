@@ -1,0 +1,17 @@
+Asymptotic Notations are mathematical tools used to obtain or represent Bounds of function.
+
+o	Explain Big O notation and how it helps in analyzing algorithms.
+Big oh (O) :-
+It is the mathametical notation used to represent upper bound of a function.
+Let f(n) = O(g(n)) if there exist some c>0 and n'>=0 such that f(n) <= c*g(n) for n>=n'.
+
+o	Describe the best, average, and worst-case scenarios for search operations.
+In array search operation will take:-
+O(1) time complexity in best case.
+O(n) time complexity in average case.
+O(n) time complexity in worst case.
+
+In sorted array search operation will take:-
+O(1) time complexity in best case.
+O(log(n)) time complexity in average case.
+O(n) time complexity in worst case.
