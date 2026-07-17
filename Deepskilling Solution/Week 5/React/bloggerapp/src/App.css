@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 40px;
+}
+
+.section {
+  width: 30%;
+  padding: 20px;
+  border-right: 5px solid green;
+}
+
+.section:last-child {
+  border-right: none;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 18px;
+}

@@ -1,0 +1,13 @@
+import React from "react";
+
+function GuestPage() {
+  return (
+    <div>
+      <h2>Please sign up.</h2>
+
+  
+    </div>
+  );
+}
+
+export default GuestPage;
